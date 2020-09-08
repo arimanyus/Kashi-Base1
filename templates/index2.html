@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>
+            Welcome to Index 2
+        </title>
+    </head>
+    <body>
+        <h1>Welcome to Index 2</h1>
+        <form method="GET" action="">
+            {% csrf_token %}
+            {{ gpuform.as_p }}
+            <input type = "submit" value="Submit">
+            </form>
+    </body>
+</html>
