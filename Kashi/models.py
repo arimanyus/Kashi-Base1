@@ -34,5 +34,3 @@ def get_gpu_strings():
 class GPU(models.Model):
     mfg = models.CharField(max_length=50, choices=MFG_CHOICES)
     gpu = models.CharField(max_length=50, choices=GPU_CHOICES)
-
-    ppsr
