@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
     <body>
-        <div type="container">
-            <div type="row">
-        <h1>Welcome to Index 2</h1>
+        <div class="container">
+            <div class="row">
+                <h1>Set system specifications here</h1>
+            </div>
+            <div class="row">
         <form method="GET" action="">
             {% csrf_token %}
             <label for="gpu">GPU Manufacturer:</label>
@@ -19,7 +21,9 @@
             </select>
             
             <input type = "submit" value="Submit" onclick="gpuCal()">
+            </div>
             </form>
+            </div>
         </div>
         </div>
     <script src="{% static 'website/js/module.js' %}"></script>
