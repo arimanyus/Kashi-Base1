@@ -15,10 +15,15 @@
         <form method="GET" action="">
             {% csrf_token %}
             <label for="gpu">GPU Manufacturer:</label>
-            <select id="gpu" name="gpu">
+            <select id="gpu" name="gpu" onchange="gpuOptions(this.value);">
+            <option value="" disabled selected>Select</option>
                 <option value="AMD">AMD</option>
                 <option value="Nvidia">Nvidia</option>
             </select>
+            <select id="GPUSel" name="GPUSel">
+                <option value="" disabled selected>Select</option>
+            </select>
+
             
             <input type = "submit" value="Submit" onclick="gpuCal()">
             </div>
