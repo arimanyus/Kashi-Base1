@@ -6,7 +6,7 @@ function gpuCal() {
 
 var GPUs = { 
     AMD: ['Athlon 660', 'GX340'],
-    Nvidia: ['GTX 1660', 'GTX 1660 Ti']   
+    Nvidia: ['GTX 1660', 'GTX 1660 Ti'] 
  }
 
  function gpuOptions(value) {
