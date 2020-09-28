@@ -16,7 +16,8 @@
             {% csrf_token %}
             <label for="gpu">GPU Manufacturer:</label>
             <select id="gpu" name="gpu" onchange="gpuOptions(this.value);">
-            <div>GPU Model:
+            <div>
+            <label for="gpumodel">GPU Model: </label>
             <option value="" disabled selected>Select</option>
                 <option value="AMD">AMD</option>
                 <option value="Nvidia">Nvidia</option>
@@ -24,6 +25,18 @@
             <select id="GPUSel" name="GPUSel">
                 <option value="" disabled selected>Select</option>
             </select>
+            </div>
+            <div>
+                <label for="cpumodel">CPU: </label>
+                <option value="" disabled selected>Select</option>
+                    <option value="AMD">AMD</option>
+                    <option value="Nvidia">Intel</option>
+                </select>
+                <select id="CPUSel" name="CPUSel">
+                    <option value="" disabled selected>Select</option>
+                </select>
+                </div>
+
             <input type = "submit" value="Submit" onclick="gpuCal()">
             </div>
             </div>
