@@ -19,7 +19,7 @@ function cpuOptions(value) {
     else {
         var cpuSelect = "";
         for (categoryId in CPUs[value]) {
-            cpuSelect += "<option>" + CPUs[value][categoryId][2] + "</option>";
+            cpuSelect += "<option>" + CPUs[value][categoryId][0] + "</option>";
         }
         document.getElementById("CPUSel").innerHTML = cpuSelect;
     }
