@@ -8,7 +8,7 @@ function gpuCal() {
     else {
         var gpuSelect = "";
         for (categoryId in GPUs[value]) {
-            gpuSelect += "<option>" + GPUs[value][categoryId][4] + "</option>";
+            gpuSelect += "<option>" + GPUs[value][categoryId][2] + "</option>";
         }
         document.getElementById("GPUSel").innerHTML = gpuSelect;
     }
