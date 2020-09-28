@@ -25,12 +25,11 @@
             <select id="GPUSel" name="GPUSel">
                 <option value="" disabled selected>Select</option>
             </select>
-            </div>
-            <div>
                 <label for="cpumodel">CPU: </label>
+                <select id="cpu" name="cpu" onchange="cpuOptions(this.value);">
                 <option value="" disabled selected>Select</option>
                     <option value="AMD">AMD</option>
-                    <option value="Nvidia">Intel</option>
+                    <option value="Intel">Intel</option>
                 </select>
                 <select id="CPUSel" name="CPUSel">
                     <option value="" disabled selected>Select</option>
