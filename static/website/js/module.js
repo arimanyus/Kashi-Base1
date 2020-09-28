@@ -96,7 +96,7 @@ var GPUs = {
     else {
         var gpuSelect = "";
         for (categoryId in GPUs[value]) {
-            gpuSelect += "<option>" + GPUs[value][categoryId] + "</option>";
+            gpuSelect += "<option>" + GPUs[value][categoryId][4] + "</option>";
         }
         document.getElementById("GPUSel").innerHTML = gpuSelect;
     }
