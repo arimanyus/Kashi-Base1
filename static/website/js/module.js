@@ -24,3 +24,14 @@ function cpuOptions(value) {
         document.getElementById("CPUSel").innerHTML = cpuSelect;
     }
 }
+
+function RAMOptions(value) {
+    if (value.length == 0) document.getElementById("ram").innerHTML = "<option></option>";
+    else {
+        var RAMSelect = "";
+        for (categoryId in CPUs[value]) {
+            RAMSelect += "<option>" + RAMs[value][categoryId][0] + "</option>";
+        }
+        document.getElementById("RAMSel").innerHTML = RAMSelect;
+    }
+}
