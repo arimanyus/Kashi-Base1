@@ -64,8 +64,20 @@
                     <option value="16">x16</option>
                 </select>
                 </div>
+                <label for="StorageSel">Storage: </label>
+                <select id="storage" name="storage" onchange="storageS(this.value);">
+                    <div>
+                    <option value="" disabled selected>Select</option>
+                        <option value="SSD">SSD</option>
+                        <option value="HDD">HDD</option>
+                    </select>
+                    <select id="RAMSel" name="RAMSel">
+                        <option value="" disabled selected>Select</option>
+                    </select>
+            
 
-            <input type = "submit" value="Submit" onclick="gpuCal()">
+            <div align="center"><input type = "submit" value="Submit" onclick="gpuCal()"></div>
+            </div>
             </div>
             </div>
             </form>
