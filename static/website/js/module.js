@@ -1,7 +1,7 @@
 function gpuCal() {
     var gpu = document.getElementById('gpu').value;
     alert(gpu);
-    };
+    }
 
 function gpuOptions(value) {
     if (value.length == 0) document.getElementById("gpu").innerHTML = "<option></option>";
@@ -12,7 +12,7 @@ function gpuOptions(value) {
         }
         document.getElementById("GPUSel").innerHTML = gpuSelect;
     }
-};
+}
 
 function cpuOptions(value) {
     if (value.length == 0) document.getElementById("cpu").innerHTML = "<option></option>";
@@ -23,7 +23,7 @@ function cpuOptions(value) {
         }
         document.getElementById("CPUSel").innerHTML = cpuSelect;
     }
-};
+}
 
 function storageS(value) {
     const storageType = { 
@@ -38,4 +38,4 @@ function storageS(value) {
         }
         document.getElementById("RAMSel").innerHTML = StorageSelect;
     }
-};
+}
