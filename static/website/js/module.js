@@ -1,8 +1,3 @@
-function gpuCal() {
-    var gpu = document.getElementById('gpu').value;
-    alert(gpu);
-    };
-
 function gpuOptions(value) {
     if (value.length == 0) document.getElementById("gpu").innerHTML = "<option></option>";
     else {
@@ -36,6 +31,15 @@ function storageS(value) {
         for (categoryId in storageType[value]) {
             StorageSelect += "<option>" + storageType[value][categoryId] + "</option>";
         }
-        document.getElementById("RAMSel").innerHTML = StorageSelect;
+        document.getElementById("StorageSelect").innerHTML = StorageSelect;
     }
 };
+
+const gpu = document.getElementById('gpu').value;
+const gpumodel = document.getElementById('gpumodel').value;
+
+var final = gpu.concat(gpuModel);
+
+function finalCal() {
+    alert(final);
+    };
