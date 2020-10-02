@@ -44,5 +44,5 @@ function storageS(value) {
 var gpu = document.getElementById('gpu').value;
 
 function finalCal() {
-    document.getElementById("result").innerHTML = finalGPU + finalCPU;
+    document.getElementById("result").innerHTML = finalGPU + " " + finalCPU;
     };
