@@ -6,6 +6,9 @@ function gpuOptions(value) {
             gpuSelect += "<option>" + GPUs[value][categoryId][2] + "</option>";
         }
         document.getElementById("GPUSel").innerHTML = gpuSelect;
+        var e = document.getElementById("GPUSel");
+                var strUser = e.options[e.selectedIndex].text;
+            finalGPU = strUser;
     }
 };
 
@@ -38,5 +41,5 @@ function storageS(value) {
 var gpu = document.getElementById('gpu').value;
 
 function finalCal() {
-    document.getElementById("result").innerHTML = gpuSelect;
+    document.getElementById("result").innerHTML = finalGPU;
     };
