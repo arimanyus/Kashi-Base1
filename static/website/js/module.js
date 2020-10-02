@@ -20,6 +20,9 @@ function cpuOptions(value) {
             cpuSelect += "<option>" + CPUs[value][categoryId][0] + "</option>";
         }
         document.getElementById("CPUSel").innerHTML = cpuSelect;
+        var a = document.getElementById("CPUSel");
+                var strCPU = a.options[a.selectedIndex].text;
+            finalCPU = strCPU;
     }
 };
 
@@ -41,5 +44,5 @@ function storageS(value) {
 var gpu = document.getElementById('gpu').value;
 
 function finalCal() {
-    document.getElementById("result").innerHTML = finalGPU;
+    document.getElementById("result").innerHTML = finalGPU + finalCPU;
     };
