@@ -35,11 +35,8 @@ function storageS(value) {
     }
 };
 
-const gpu = document.getElementById('gpu').value;
-const gpumodel = document.getElementById('gpumodel').value;
-
-var final = gpu.concat(gpuModel);
+var gpu = document.getElementById('gpu').value;
 
 function finalCal() {
-    alert(final);
+    document.getElementById("result").innerHTML = gpuSelect;
     };
