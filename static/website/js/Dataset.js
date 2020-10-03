@@ -167,3 +167,10 @@ const GPUs = {
     [' Pentium G4620', 'Kaby Lake', '2/4', '3.7 / - GHz', '54W', 50]] 
  };
  
+function gpuInfo(value) {
+
+}
+
+const GPUs2 = { 
+   'AMD': {'Radeon VII' : ['Vega 20', '300W', '58.9']}
+   }
