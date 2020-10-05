@@ -46,3 +46,5 @@ var gpu = document.getElementById('gpu').value;
 function finalCal() {
     document.getElementById("result").innerHTML = finalGPU + " " + finalCPU;
     };
+
+//PLEASE DON'T MAKE ANY CHANGES UNTIL MODULE IS CONFIRMED TO BE WORKING.
