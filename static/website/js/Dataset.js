@@ -173,4 +173,4 @@ function gpuInfo(value) {
 
 const GPUs2 = { 
    'AMD': {'Radeon VII' : ['Vega 20', '300W', '58.9']}
-   }
+   } //Complete the power module.
