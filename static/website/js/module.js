@@ -2,13 +2,13 @@ function gpuOptions(value) {
     if (value.length == 0) document.getElementById("gpu").innerHTML = "<option></option>";
     else {
         var gpuSelect = "";
-        for (categoryId in GPUs2[value]) {
-            gpuSelect += "<option>" + Object.keys(GPUs2.categoryId)[value] + "</option>";
+        for (categorypd in GPUs2[value]) {
+            gpuSelect += "<option>" + Object.keys(GPUs2.categorypd)[0][0][3] + "</option>";
         }
         document.getElementById("GPUSel").innerHTML = gpuSelect;
         var e = document.getElementById("GPUSel");
-                var strUser = e.options[e.selectedIndex].text;
-            finalGPU = strUser;
+                var strGpu = e.options[e.selectedIndex].text;
+            finalGPU = strGpu;
     }
 };
 
