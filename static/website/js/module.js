@@ -3,7 +3,7 @@ function gpuOptions(value) {
     else {
         var gpuSelect = "";
         for (categorypd in GPUs2[value]) {
-            gpuSelect += "<option>" + GPUs2[categorypd][0][0][3] + "</option>";
+            gpuSelect += "<option>" + GPUs2[value][categorypd][2] + "</option>";
         }
         document.getElementById("GPUSel").innerHTML = gpuSelect;
         var e = document.getElementById("GPUSel");
